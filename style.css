@@ -1,0 +1,150 @@
+/* Navbar */
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+ .navbar-brand{
+     font-family: serif;
+     font-size: 32px;
+ }
+ 
+/* Jumbotron */
+.jumbotron {
+    background-image: url(images.jpg);
+    background-size: cover;
+    height: 450px;
+    position: relative ;
+}
+
+.jumbotron .container {
+    z-index: 1;
+    position: relative;
+}
+
+.jumbotron::after {
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0)   );
+    position: absolute;
+    bottom: 0;
+
+}
+
+.jumbotron .display-4 {
+    color: white;
+    text-align: center;
+    margin-top: 150px;
+    font-weight:200px;
+    text-shadow: 5px 5px 0px rgb(0, 0, 0.8);
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.jumbotron .display-4 span {
+    font-weight: 1000px;
+}
+
+/* info panel */
+.info-panel {
+    box-shadow: 0 3px 20px rgba(0, 0, 0.0.5);
+    border-radius: 12px;
+    margin-top: -100px;
+    background-color: white;
+    padding: 30px;
+}
+
+.info-panel .nav-link   {
+    content: ' ';
+    display: inline-block;
+    border-bottom: 2px solid white;
+    width: 40%;
+    margin: auto;
+    padding-bottom: 4px;
+    margin-bottom: -6px;
+}
+
+.info-panel img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.info-panel h4  {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.info-panel p   {
+    font-size: 13px;
+    color: #acacac;
+    margin-top: 10px;
+    font-weight: 200;
+}
+
+/* Workingspace */
+.image1   {
+    margin-top: 180px;
+    margin-bottom: 100px;
+ 
+}
+
+.workingspace h3    {
+    font: size 52px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 50px;
+    font-display: bold;
+
+}  
+
+.workingspace h3 span   {
+    font-weight: 500;
+}
+/* Footer */
+.Footer {
+    float: left;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    line-height: 150px;
+    background-color: blue;
+    position: relative;
+}
+
+.Footer p   {    
+    font-size: 20px;
+    border-top: 2px solid rgb(191, 242, 255);    
+    
+}
+/* Akhir Footer */
+
+
+ /* DESKTOP VERSION */
+
+ @media (min-width: 992px) { 
+     
+ }
+
+
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+
+    .nav-link:hover::after {
+        content: ' ';
+        display: block;
+        border-bottom: 2px solid rgb(36, 255, 222);
+        width: 50%; 
+        margin: auto;
+        padding-bottom: 4px;
+        margin-bottom: -6px;
+    }
+ 
